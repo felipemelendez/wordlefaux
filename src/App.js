@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import MatchFinder from './components/MatchFinder';
+import './styles.css';
 
 function App() {
+  const [inputState, setInputState] = useState({})
+
+  const handleEntry = (e) => {
+
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>Wordle</h1>
+      <div>
+        {[...Array(6)].map((row, idx) => {
+          return (
+            <MatchFinder key={row} rowIndex={idx} inputState={inputState} setInputState={setInputState} />
+          );
+        })}
+      </div>
+      <button onClick={handleEntry}>Enter</button>
     </div>
   );
 }
 
 export default App;
+

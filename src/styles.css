@@ -1,0 +1,32 @@
+.container {
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+  text-align: center;
+}
+
+div {
+  background-color: #282c34;
+  color: white;
+}
+
+input[type="text"] {
+  background-color : #d1d1d1;
+  padding: 5px 5px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: resize;
+  box-shadow: -1px 0 0 1px #43e5f7;
+}
+
+input[type=text]:focus{
+  outline: 2px solid orange;
+}
+
+textarea:focus, input:focus {
+  color: red;
+  background-color: orange;
+}
