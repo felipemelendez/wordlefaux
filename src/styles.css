@@ -1,25 +1,23 @@
 .container {
-  /* display: flex; */
-  /* justify-content: center;
-  align-items: center; */
-  min-height: 100vh;
+  min-height: 80vh;
   text-align: center;
 }
 
 div {
-  background-color: #282c34;
-  color: white;
+  background-color: white;
+  color: rgb(133, 127, 127);
 }
 
 input[type="text"] {
   background-color : #d1d1d1;
-  padding: 5px 5px;
+  padding: 8px 8px;
   height: 30px;
   width: 30px;
   text-align: center;
   text-transform: uppercase;
   cursor: resize;
-  box-shadow: -1px 0 0 1px #43e5f7;
+  box-shadow: 0px 0px 1px 5px #43e5f7;
+  font-size: 1.8em;
 }
 
 input[type=text]:focus{
@@ -27,6 +25,34 @@ input[type=text]:focus{
 }
 
 textarea:focus, input:focus {
-  color: red;
+  color: rgb(34, 13, 224);
   background-color: orange;
+  font-size: 2.1em;
+}
+
+button {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  color: gray;
+  text-decoration: wavy;
+  background-color: #43e5f7;;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 7px rgb(184, 183, 183);
+}
+
+button:hover {
+  background-color: #664caf; /* Green */
+  color: white;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 4px #666;
+  transform: translateY(4px);
 }

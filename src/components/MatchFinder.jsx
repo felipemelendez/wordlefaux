@@ -29,22 +29,22 @@ const MatchFinder = ({rowIndex, inputState, setInputState}) => {
       [e.target.name]: e.target.value
     })
   }
-
   console.log(inputState); // Character location
 
   return (
     <div>
-      {[...Array(5)].map((box, columnIndex) => {
+      {[...Array(5)].map((column, columnIndex) => {
         return (
           <>
-          <input
-            name={`${rowIndex}-${columnIndex}`} // target name
-            type="text" // target value
-            maxlength="1"
-            size="1"
-            onChange={changeHandler} // Sets the state of this tag
-          />
-        </>
+            <input
+              key={column}
+              name={`${rowIndex}-${columnIndex}`} // target name
+              type="text" // target value
+              maxlength="1"
+              size="1"
+              onChange={ changeHandler } // Sets the state of this tag
+            />
+          </>
         );
       })}
     </div>
