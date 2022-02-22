@@ -3,31 +3,40 @@
   text-align: center;
 }
 
-div {
-  background-color: white;
-  color: rgb(133, 127, 127);
+header {
+  margin-top: 2vh;
+  margin-bottom: 8%;
+  padding: 20px;
+  border-bottom: 2px solid #5885AF;
+  font-size: 3em;
+  font-family: arial,sans-serif;
+  font-weight: bold;
+  color: #3F92B7;
 }
 
 input[type="text"] {
-  background-color : #d1d1d1;
+  margin:4px;
   padding: 8px 8px;
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
   text-align: center;
   text-transform: uppercase;
   cursor: resize;
-  box-shadow: 0px 0px 1px 5px #43e5f7;
-  font-size: 1.8em;
+  box-shadow: 2px 2px 2px 1px #43e5f7;
+  font-size: 3em;
+  font-weight: bold;
+  color: darkgray;
 }
 
 input[type=text]:focus{
-  outline: 2px solid orange;
+  outline: 2px solid #D95980;
 }
 
 textarea:focus, input:focus {
-  color: rgb(34, 13, 224);
-  background-color: orange;
-  font-size: 2.1em;
+  color: gray;
+  background-color: #AACDE5;;
+  font-size: 2.5em;
+  font-family: arial,sans-serif;
 }
 
 button {
@@ -35,24 +44,25 @@ button {
   padding: 5px 10px;
   margin-top: 10px;
   font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
   text-align: center;
   outline: none;
-  color: gray;
-  text-decoration: wavy;
-  background-color: #43e5f7;;
+  color:#3F92B7;
+  background-color: #AACDE5;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 7px rgb(184, 183, 183);
+  box-shadow: 0 7px #3F92B7;
 }
 
 button:hover {
-  background-color: #664caf; /* Green */
-  color: white;
+  background-color: #E3EFF9;
+  color: #D15D84;
 }
 
 button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 4px #666;
+  background-color: #D15D84;
+  color: #E3EFF9;
+  box-shadow: 0 4px gray;
   transform: translateY(4px);
 }
